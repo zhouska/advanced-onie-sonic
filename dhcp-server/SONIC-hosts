@@ -1,0 +1,34 @@
+group {
+  option ztp_json_url "http://192.168.50.1/ztp.json";
+
+  host leaf1 {
+    hardware ethernet 0c:16:90:0e:00:00;
+    fixed-address 192.168.50.8;
+    option host-name "leaf1";
+  }
+  host leaf2 {
+    hardware ethernet 0c:ae:4a:46:00:00;
+    fixed-address 192.168.50.9;
+    option host-name "leaf2";
+  }
+  host leaf3 {
+    hardware ethernet 0c:16:d5:94:00:00;
+    fixed-address 192.168.50.10;
+    option host-name "leaf3";
+  }
+  host leaf4 {
+    hardware ethernet 0c:92:71:f2:00:00;
+    fixed-address 192.168.50.11;
+    option host-name "leaf4";
+  }
+  host spine1 {
+    hardware ethernet 0c:0f:75:27:00:00;
+    fixed-address 192.168.50.12;
+    option host-name "spine1";
+  }
+  host spine2 {
+    hardware ethernet 0c:9e:e3:80:00:00;
+    fixed-address 192.168.50.13;
+    option host-name "spine2";
+  }
+}

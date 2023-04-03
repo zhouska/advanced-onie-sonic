@@ -1,0 +1,11 @@
+version: '3'
+services:
+  dhcpd:
+    build: .
+    image: dhcpd
+    container_name: dhcpd
+    restart: unless-stopped
+    volumes:
+      - ./dhcpd.conf:/etc/dhcp/dhcpd.conf
+      - ./SONIC-hosts:/etc/dhcp/SONIC-hosts
+    network_mode: host
